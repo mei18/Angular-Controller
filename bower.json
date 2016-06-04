@@ -1,0 +1,24 @@
+{
+  "name": "Angular-Controller",
+  "homepage": "https://github.com/mei18/Angular-Controller",
+  "authors": [
+    "Melanie Liang Gao"
+  ],
+  "description": "Angular proyect with a controller",
+  "main": "index.html",
+  "keywords": [
+    "Angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6"
+  }
+}
