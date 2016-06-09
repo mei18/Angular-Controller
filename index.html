@@ -7,6 +7,23 @@
 	<script src="controllers.js"></script>
 </head>
 <body>
-	
+	<h2>My TODO list</h2>
+
+	<div ng-controller="todoController as todoList">
+		<span>{{todoList.list.length}} TODOS</span>
+
+		<a href="#" ng-click="todoList.archive()">Delete</a>
+
+		<ul>
+			<li ng-repeat="todo in todoList.list">
+				<input type="checkbox" ng-model="todo.done">
+				<span class="done-{{todoList.done}}">{{todo.text}}</span>
+			</li>
+		</ul>
+		<form ng-submit="todoList.add()">
+			<input ng-model="todoList.todoText" type="text" placeholder="Add new todo here">
+			<input type="submit" value="Add">
+		</form>
+	</div>
 </body>
 </html>
